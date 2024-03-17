@@ -135,3 +135,6 @@ aside ol:hover {
     list-style-type: lower-greek;
 }
 
+img {
+    width: 100%;
+}
