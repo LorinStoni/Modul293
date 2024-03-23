@@ -1,0 +1,87 @@
+/*
+    ToDo: Herr Lux fragen wegen main-Element umklappen für aside-Element
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    margin: 1vb;
+    padding: 1vb;
+    padding-right: calc(25vb - 1vb);
+
+    float: left;
+}
+
+
+header,
+footer {
+    margin: 0;
+    background-color: rgb(50, 50, 50);
+
+    height: 4vb;
+    width: 100%;
+}
+
+
+header>div {
+    color: white;
+    text-align: center;
+
+    background-color: rgb(50, 50, 50);
+
+    padding: 10px;
+    border-right: white 2px solid;
+    margin: 0;
+
+    width: 5em;
+
+    float: left;
+}
+
+header>div:hover {
+    background-color: grey;
+}
+
+header>div>a {
+    color: inherit;
+    text-align: inherit;
+    text-decoration: inherit;
+}
+
+header>div>a:hover {
+    text-decoration: underline;
+}
+
+header>div>a:active,
+header>div>a:visited {
+    font-style: italic;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+aside {
+    margin-left: 1vb;
+    padding: 0;
+
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 25vb;
+
+    background-color: orange;
+}
+
+aside > article {
+    margin: 1vb;
+}
+
