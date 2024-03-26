@@ -1,0 +1,101 @@
+/* Reset von Browserstandards */
+* {
+	margin: 0;
+	padding: 0;
+}
+/* render html5 elements as block 
+   rendert html5 elemente als block  */
+
+header, footer, section, aside, nav, article { 
+	display: block;
+}
+
+body {
+	background-color: #ccc;
+	font-size: 0.95em;
+	font-family: Arial, SunSans-Regular, sans-serif;
+	color:#564b47;
+}
+
+h1 {
+	font-size:1.8em;
+	font-weight: normal;
+	margin: 0 0 20px;
+}
+
+/* Container zentriert das Layout */
+
+#container {
+	max-width: 1200px;
+	min-width: 880px;
+	margin: 10px auto;
+	background-color: orange;
+}
+
+/* Header */
+header {
+	padding:20px;
+	background:#ccc ;
+}
+
+
+/* Navigavtion */
+
+nav {
+	font-size: 16px;
+	background: #564B47;
+	color:#fff;
+}
+
+nav ul { 
+	list-style-type: none; 
+	margin:0;
+}
+
+nav li {
+	display: inline;
+}
+
+nav a {
+	display: inline-block;
+	margin:0;
+	color: #fff;
+	border-right:1px solid #97827F;
+	padding: 10px 50px;
+	text-decoration: none;
+}
+
+
+/* Inhalt */
+section#content {
+	margin: 0 250px 0 0;
+}
+
+article {
+	float: left;
+	background-color: #fff;
+	min-height:560px;
+	padding:20px;
+}
+p{
+	padding:  0 0 20px;
+	line-height:1.5em;
+}
+
+
+/* Aside */
+
+aside {
+	padding:20px;
+	float:right;
+	width: 200px;
+}
+
+
+/* Footer */
+footer {
+	padding: 20px;
+	clear:both;
+	background-color: #564B47;
+	color:#fff;
+}

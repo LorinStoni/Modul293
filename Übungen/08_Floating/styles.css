@@ -10,10 +10,18 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+main,
+header,
+footer,
+aside {
+    display: block;
+}
+
+
 main {
     margin: 1vb;
     padding: 1vb;
-    padding-right: calc(25vb - 1vb);
+    padding-right: calc(25vb);
 
     float: left;
 }
@@ -21,45 +29,52 @@ main {
 
 header,
 footer {
-    margin: 0;
-    background-color: rgb(50, 50, 50);
-
-    height: 4vb;
     width: 100%;
 }
 
-
-header>div {
-    color: white;
-    text-align: center;
-
+nav {
     background-color: rgb(50, 50, 50);
+    color: white;
 
-    padding: 10px;
-    border-right: white 2px solid;
-    margin: 0;
-
-    width: 5em;
-
-    float: left;
+    font-size: large;
 }
 
-header>div:hover {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5em;
+}
+
+nav li {
+    text-align: center;
+
+    margin: 0px;
+    padding: inherit;
+    border-right: white 2px solid;
+
+    display: inline;
+}
+
+nav li:hover {
     background-color: grey;
 }
 
-header>div>a {
+nav li a {
+    display: inline-block;
+}
+
+a {
     color: inherit;
     text-align: inherit;
     text-decoration: inherit;
 }
 
-header>div>a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-header>div>a:active,
-header>div>a:visited {
+a:active,
+a:visited {
     font-style: italic;
 }
 
@@ -79,6 +94,8 @@ aside {
     width: 25vb;
 
     background-color: orange;
+
+    float: right;
 }
 
 aside > article {
