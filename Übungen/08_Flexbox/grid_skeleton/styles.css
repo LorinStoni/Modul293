@@ -1,6 +1,8 @@
 .grid-container {
+    border: 10px solid var(--blue);
+
     display: grid;
-    grid-template-columns: 100px 100px auto;
-    grid-gap: 10px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 100px);
 }
 
