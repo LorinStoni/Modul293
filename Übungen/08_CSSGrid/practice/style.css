@@ -1,0 +1,93 @@
+:root {
+    --grey: #4d4d4d;
+    --grey-hover: #b6b6b6;
+}
+
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+    margin: 0;
+    padding: 25px 100px;
+    background-color: gainsboro;
+    height: calc(100vh - 50px);
+
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "logo       logo"
+        "nav        nav"
+        "content    aside"
+        "footer     footer";
+}
+
+.logo {
+    grid-area: logo;
+    font-size: 24px;
+    padding: 20px;
+}
+
+nav {
+    grid-area: nav;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--grey);
+
+    list-style-type: none;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto;
+
+    justify-content: left;
+    align-items: center;    
+}
+
+nav ul li {
+    padding: 8px 20px;
+    border-right: 1px white solid;
+}
+
+nav ul li:hover {
+    transition: 1s;
+    background-color: var(--grey-hover);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    grid-area: content;
+    background-color: white;
+
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: var(--grey);
+    color: white;
+
+    padding: 8px 20px;
+}
+
+aside {
+    grid-area: aside;
+
+    margin: 0;
+    padding: 15px;
+
+    background-color: orange;
+}
+
+
+
