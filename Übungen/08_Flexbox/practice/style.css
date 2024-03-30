@@ -1,0 +1,88 @@
+:root {
+    --grey: #4d4d4d;
+    --grey-hover: #b6b6b6;
+}
+
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.wrapper {
+    margin: 20px 100px;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo {
+    padding: 1em;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+nav {
+    border: 5px solid red;
+
+    flex: 0 0 100%;
+}
+
+nav ul {
+    display: flex;
+
+    list-style-type: none;
+    background-color: var(--grey);
+}
+
+/* WHY !!! */
+nav ul li {
+    padding: 8px 20px;
+
+    border-right: 1px white solid;
+}
+
+nav ul li:hover {
+    transition: 1s;
+    background-color: var(--grey-hover);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 1em;
+
+    flex: 1 2 250px;
+}
+
+aside {
+    padding: 1em;
+    margin: 0;
+
+
+    background-color: orange;
+    
+    flex: 1 1 100px;
+}
+
+footer {
+    background-color: var(--grey);
+    color: white;
+
+    padding: 8px 20px 25px 20px;
+    width: 100%;
+    height: 10px;
+
+    flex: 0 0 1;
+}
+
