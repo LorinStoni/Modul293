@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Flexible Bildelemente - 2.1 Anpassungsfähige Bilder</title>
+
+    <style>
+        img {
+            width: 100%;
+            object-fit: cover;
+            background-size: cover;
+        }
+        
+        @media (max-width: 1000px) {
+            * {
+                background-color: red;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            * {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img srcset="img-3000px.png 3000w, img-100px.jpg 100w"
+    sizes="(min-width: 1000px) 100vw, (max-width: 1000px) 10vw">
+</body>
+
+</html>

@@ -102,3 +102,20 @@ h1 {
 .flex>.item7 {
     width: 50%;
 }
+
+
+@media print {
+    .float.right {
+        float: left;
+    }
+}
+
+@media all and (orientation: landscape) {
+    .item {
+        background-color: crimson;
+    }
+
+    .grid > .item1 {
+        order: 1;
+    }
+}
